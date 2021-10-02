@@ -1,0 +1,16 @@
+
+# Publish all joint states -----------------------------------
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+
+# Position Controllers --------------------------------------
+Rev4_position_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: Rev4
+  # pid_gains: {p: 1.0, i: 0.01, d: 1.0}
+Rev5_position_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: Rev5
+  # pid_gains: {p: 1.0, i: 0.01, d: 1.0}
+
